@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "module": "es2020",
+    "target": "es2020",
+    "lib": ["dom", "es2020"],
+    "strict": true,
+    "skipLibCheck": true,
+    "verbatimModuleSyntax": true
+  },
+  "include": ["src/frontend/**/*", "src/types/**/*"]
+}
