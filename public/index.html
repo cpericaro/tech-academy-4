@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <span class="logo">Shortener</span>
+            <nav>
+                <a href="/" class="nav-link active">Home</a>
+                <a href="/analytics.html" class="nav-link">Analytics</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="shorten-section">
+            <h1>Encurtar URL</h1>
+            <p class="subtitle">Cole a URL longa abaixo e clique em encurtar</p>
+
+            <div class="form-group">
+                <input
+                    type="text"
+                    id="urlInput"
+                    placeholder="https://exemplo.com/pagina-muito-longa"
+                    class="url-input"
+                />
+                <button id="shortenBtn" class="btn-primary">Encurtar</button>
+            </div>
+
+            <div id="result" class="result-box hidden"></div>
+        </section>
+
+        <section class="history-section">
+            <h2>Histórico</h2>
+            <div id="urlList" class="url-list">
+                <p class="empty-state">Nenhuma URL encurtada ainda.</p>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>
